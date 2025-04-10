@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaInstagram, FaYoutube, FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -70,10 +71,10 @@ const Header = () => {
         </div>
 
         {/* Sidebar Links */}
-        <a href="#" className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Home</a>
-        <a href="#" className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">About</a>
-        <a href="#" className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Services</a>
-        <a href="#" className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Contact</a>
+        <Link to="/" onClick={() =>setIsSidebarOpen(false)}  className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Home</Link>
+        <Link to="/about" onClick={() =>setIsSidebarOpen(false)}  className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">About Us</Link>
+        <Link to="/privacy-and-terms" onClick={() =>setIsSidebarOpen(false)}  className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Terms & Conditions</Link>
+        <Link to="/enquiry" onClick={() =>setIsSidebarOpen(false)} className="text-white py-2 px-3 hover:bg-[#1E2235] rounded w-full">Contact Us</Link>
         </div>
 
         <div className="space-y-4 w-full border-t border-[#46472d]">

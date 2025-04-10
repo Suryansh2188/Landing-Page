@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 export default function Header2() {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) section.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToSection = (id) => {
+  //   const section = document.getElementById(id);
+  //   if (section) section.scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <header className="text-gray-600 body-font shadow-sm sticky top-0 bg-white z-50">
