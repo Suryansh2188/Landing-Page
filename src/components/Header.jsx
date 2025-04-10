@@ -8,7 +8,7 @@ import Logo from "../assets/logo.svg";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
-    <header className="bg-[#1E2235] text-white py-3 px-4 md:px-12 relative">
+    <header className="bg-[#1E2235] text-white py-3 px-4 md:px-12 fixed top-0 left-0 w-full z-50 md:relative">
       <div className="container h-fit mx-auto flex md:flex-row justify-between items-center">
         
         {/* Left Side: Contact Info */}

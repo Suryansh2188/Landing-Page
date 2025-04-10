@@ -18,7 +18,6 @@ export default function Home() {
    <MyTrandsMission />
    <FAQ />
    <Testimonial2 />
-   <Footer />
    {/* <Header />
    {/* <Footer /> */}
    </>

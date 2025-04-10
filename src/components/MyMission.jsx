@@ -1,4 +1,5 @@
-import { FaCheckCircle, FaRocket, FaGift, FaChartBar, FaCity, FaHeadset } from 'react-icons/fa';
+import { FaCheckCircle, FaRocket, FaGift, FaChartBar, FaCity, FaHeadset, FaStore, FaShoppingCart, FaHandshake, FaBullseye  } from 'react-icons/fa';
+
 import React from 'react';
 
 export default function MyTrandsMission() {
@@ -13,6 +14,7 @@ export default function MyTrandsMission() {
             className="absolute inset-0 w-full h-full object-cover opacity-90"
           />
           <div className="relative z-20 p-8 text-white bg-blue-900/70 backdrop-blur-md">
+          
             <h2 className="text-3xl font-bold mb-4">Who Benefits from <span className="text-blue-300">MyTrands?</span></h2>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">For Customers:</h3>
@@ -73,6 +75,35 @@ export default function MyTrandsMission() {
 
         {/* Right Side - Mission & Future */}
         <div className="rounded-3xl bg-gray-50 p-8 shadow-xl animate-slideUp">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+        MyTrands' <span className="text-blue-500">Mission and Future</span>
+</h2>
+<div className="space-y-5 mb-10">
+  <div className="flex gap-4 items-start">
+    {/* <FaBullseye className="text-blue-500 mt-1" /> */}
+    <p>
+      <strong>MyTrands is not just an e-commerce platform</strong>, but a mission to empower local businesses. In today’s digital era, big companies dominate the market, making it hard for small shopkeepers to compete. MyTrands gives them a fighting chance.
+    </p>
+  </div>
+  <div className="flex gap-4 items-start">
+    <FaStore className="text-indigo-500 mt-1" />
+    <p>
+      <strong>Digitize every small business</strong> – Helping them compete with big brands.
+    </p>
+  </div>
+  <div className="flex gap-4 items-start">
+    <FaShoppingCart className="text-green-500 mt-1" />
+    <p>
+      <strong>Make shopping easy for customers</strong> – No delivery fees or online payment issues.
+    </p>
+  </div>
+  <div className="flex gap-4 items-start">
+    <FaHandshake className="text-purple-500 mt-1" />
+    <p>
+      <strong>Strengthen the local economy</strong> – Encouraging people to support small businesses.
+    </p>
+  </div>
+</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-6">What’s Next for <span className="text-blue-500">MyTrands?</span></h2>
           <div className="space-y-5">
             <div className="flex gap-4 items-start">

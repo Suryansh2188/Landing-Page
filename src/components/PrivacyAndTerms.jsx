@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PrivacyAndTerms() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
+    <div className="w-full mx-auto px-6 py-16">
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Privacy Policy & Terms</h1>
         <p className="text-gray-500 text-sm">Updated on: {new Date().toLocaleDateString()}</p>

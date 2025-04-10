@@ -20,14 +20,50 @@ export default function EnquiryForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    console.log("Form Data:", formData);
+    try {
+      const response = await fetch('https://script.google.com/macros/s/your-script-id/exec', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        alert("Failed to submit form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form.");
+    }
   };
+  
   return (
     <section className="text-gray-600 body-font relative">
-      <h1 className="text-center text-3xl font-semibold mb-2">Enquiry</h1>
-      <div className="container px-4 py-6 mx-auto flex flex-wrap sm:flex-nowrap">
+      <div className="relative w-full h-48 mb-6">
+  <img
+    src="https://img.freepik.com/free-photo/close-up-person-working-call-center_23-2149288225.jpg?ga=GA1.1.1262468584.1738515569&semt=ais_hybrid&w=740"
+    alt="Contact Us"
+    className="w-full h-full object-cover "
+  />
+  <div className="absolute inset-0  bg-opacity-40 flex items-center justify-center">
+    <h2 className="text-white text-5xl font-semibold">Contact Us</h2>
+  </div>
+</div>
+
+      <div className="container px-10 py-6 mx-auto flex flex-wrap sm:flex-nowrap">
         {/* Google Map Section */}
         <div className="lg:w-3/5 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-6 p-6 flex items-end justify-start relative">
           <iframe
@@ -65,7 +101,7 @@ export default function EnquiryForm() {
 
         {/* Contact Form */}
         <div className="lg:w-2/5 md:w-1/2 bg-gray-100 rounded-lg flex flex-col md:ml-auto w-full p-6 mt-6 md:mt-0">
-          <h2 className="text-gray-900 text-xl font-medium title-font mb-3">Contact Us</h2>
+          <h2 className="text-gray-900 text-xl font-medium title-font mb-3">Enquiry Now</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex gap-4">
               <div className="w-1/2">

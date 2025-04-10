@@ -8,8 +8,8 @@ export default function Header2() {
   // };
 
   return (
-    <header className="text-gray-600 body-font shadow-sm sticky top-0 bg-white z-50">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header className="text-gray-600 body-font shadow-sm sticky top-10 bg-white z-50">
+      <div className="container mx-auto flex flex-wrap py-5 px-8 flex-col md:flex-row items-center">
         <Link
           to="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -30,12 +30,12 @@ export default function Header2() {
             </svg> */}
           {/* <span className="ml-3 text-xl font-semibold">MyTrands</span> */}
         </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center gap-4">
-          <Link to="/" className="hover:text-gray-900">Home</Link>
+        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center gap-10">
+          <Link to="/" className="hover:text-gray-900 font-bold">Home</Link>
           {/* <button onClick={() => scrollToSection("about")} className="hover:text-gray-900">About Us</button> */}
-            <Link to="/about" className="hover:text-gray-900">About Us</Link>
-          <Link to="/privacy-and-terms" className="hover:text-gray-900">Terms & Conditions</Link>
-          <Link to="/enquiry" className="hover:text-gray-900">Contact Us</Link>
+            <Link to="/about" className="hover:text-gray-900 font-bold">About Us</Link>
+          <Link to="/privacy-and-terms" className="hover:text-gray-900 font-bold">Terms & Conditions</Link>
+          <Link to="/enquiry" className="hover:text-gray-900 font-bold">Contact Us</Link>
           {/* <button onClick={() => scrollToSection("terms")} className="hover:text-gray-900">Terms & Conditions</button>
           <button onClick={() => scrollToSection("contact")} className="hover:text-gray-900">Contact Us</button> */}
         </nav>
