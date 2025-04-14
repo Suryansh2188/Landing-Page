@@ -14,7 +14,7 @@ export default function Footer() {
             />
           </a>
           <p className="mt-2 text-sm text-white">
-            Air plant banjo lyft occupy retro adaptogen indego
+          House no.1 malka park near Big water tank
           </p>
         </div>
 

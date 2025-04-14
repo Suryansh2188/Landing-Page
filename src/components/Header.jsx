@@ -15,24 +15,24 @@ const Header = () => {
         <div className="md:flex hidden flex-col md:flex-row items-center gap-4 text-sm">
           <div className="flex items-center gap-2">
             <FaPhoneAlt className="text-lg" />
-            <span>(225) 555-0118</span>
+            <span>8445158187</span>
           </div>
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-lg" />
-            <span>mytrands@gmail.com</span>
+            <span className="cursor-pointer">mytrands4you@gmail.com</span>
           </div>
         </div>
 
         {/* Right Side: Social Icons */}
         <div className="md:flex hidden items-center gap-2 mt-2 md:mt-0">
           <span className="text-sm font-semibold">Follow Us :</span>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://www.instagram.com/mytrands4you/" className="hover:text-gray-400 transition">
             <FaInstagram className="text-lg" />
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://studio.youtube.com/channel/UCF04T83Ac3ybkca4N_nmTKw" className="hover:text-gray-400 transition">
             <FaYoutube className="text-lg" />
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://www.facebook.com/profile.php?id=61573534151120" className="hover:text-gray-400 transition">
             <FaFacebookF className="text-lg" />
           </a>
           <a href="#" className="hover:text-gray-400 transition">
@@ -80,13 +80,13 @@ const Header = () => {
         <div className="space-y-4 w-full border-t border-[#46472d]">
         <div className="flex items-center gap-2 mt-2 md:mt-0">
           <span className="text-sm font-semibold">Follow Us :</span>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://www.instagram.com/mytrands4you/" className="hover:text-gray-400 transition">
             <FaInstagram className="text-lg" />
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://studio.youtube.com/channel/UCF04T83Ac3ybkca4N_nmTKw" className="hover:text-gray-400 transition">
             <FaYoutube className="text-lg" />
           </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          <a href="https://www.facebook.com/profile.php?id=61573534151120" className="hover:text-gray-400 transition">
             <FaFacebookF className="text-lg" />
           </a>
           <a href="#" className="hover:text-gray-400 transition">

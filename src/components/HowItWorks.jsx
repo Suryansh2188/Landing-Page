@@ -77,7 +77,7 @@ const HowItWorks = () => {
             controls={isPlaying} // Show controls only after playing
           >
             <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4" 
+              src="https://res.cloudinary.com/dkibggh7i/video/upload/v1744647229/rzpw6urkftbzfpznsw4k.mp4" 
               type="video/mp4"
             />
             Your browser does not support the video tag.

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({
@@ -13,26 +14,28 @@ export default function EnquiryForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleMapClick = (e) => {
-    setFormData({
-      ...formData,
-      location: { lat: e.latLng.lat(), lng: e.latLng.lng() },
-    });
-  };
+  // const handleMapClick = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     location: { lat: e.latLng.lat(), lng: e.latLng.lng() },
+  //   });
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form Data:", formData);
     try {
-      const response = await fetch('https://script.google.com/macros/s/your-script-id/exec', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.post('https://sheetdb.io/api/v1/b2n6y2ay57vta', {
+        data: {
+          "First Name": formData.firstName,
+          "Last Name": formData.lastName,
+          "Email": formData.email,
+          "Phone": formData.phone,
+          "Message": formData.message
+        }
+      })
   
-      if (response.ok) {
+      if (response.status === 201) {
         alert("Form submitted successfully!");
         setFormData({
           firstName: "",
