@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
           </h2>
           <nav className="list-none mb-10 space-y-2">
             <li>
-              <a className="text-white ">About Us</a>
+              <Link to="/about" className="text-white ">About Us</Link>
             </li>
             <li>
               <a className="text-white ">Carrier</a>

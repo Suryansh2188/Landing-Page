@@ -95,11 +95,11 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-2">
             <FaPhoneAlt className="text-lg" />
-            <span>(225) 555-0118</span>
+            <span>+91 8445158187</span>
           </div>
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-lg" />
-            <span>mytrands@gmail.com</span>
+            <span>mytrands4you@gmail.com</span>
           </div>
         </div>
       </div>
