@@ -85,19 +85,19 @@ export default function EnquiryForm() {
               <h2 className="title-font font-semibold text-gray-900 text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1 text-sm">123 Business St, City, Country</p>
+              <p className="mt-1 text-sm">House no.1 malka park near Big water tank</p>
             </div>
             <div className="lg:w-1/2 px-4 mt-2 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 text-xs">
                 EMAIL
               </h2>
               <a href="mailto:example@email.com" className="text-indigo-500 text-sm">
-                example@email.com
+              mytrands4you@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 text-xs mt-3">
                 PHONE
               </h2>
-              <p className="text-sm">+123-456-7890</p>
+              <p className="text-sm">+91 8445158187</p>
             </div>
           </div>
         </div>
