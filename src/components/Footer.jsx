@@ -15,7 +15,7 @@ export default function Footer() {
             />
           </a>
           <p className="mt-2 text-sm text-white">
-          House no.1 malka park near Big water tank
+          H No. 1 Malka Park Near Big Water Tank, Bulandshahr (U.P.) India
           </p>
         </div>
 
@@ -25,16 +25,16 @@ export default function Footer() {
           </h2>
           <nav className="list-none mb-10 space-y-2">
             <li>
-              <Link to="/about" className="text-white ">About Us</Link>
+              <a href="/about" className="text-white ">About Us</a>
             </li>
             <li>
-              <a className="text-white ">Carrier</a>
+              <a href="/" className="text-white ">Carrier</a>
             </li>
             <li>
-              <a className="text-white ">We are Hiring</a>
+              <a href="/" className="text-white ">We are Hiring</a>
             </li>
             <li>
-              <a className="text-white ">Blog</a>
+              <a href="/" className="text-white ">Blog</a>
             </li>
           </nav>
         </div>
@@ -45,16 +45,16 @@ export default function Footer() {
           </h2>
           <nav className="list-none mb-10 space-y-2">
             <li>
-              <a className="text-white ">Business Marketing</a>
+              <a href="/" className="text-white ">Business Marketing</a>
             </li>
             <li>
-              <a className="text-white ">User Analytic</a>
+              <a href="/" className="text-white ">User Analytic</a>
             </li>
             <li>
-              <a className="text-white ">Live Chat</a>
+              <a href="/" className="text-white ">Live Chat</a>
             </li>
             <li>
-              <a className="text-white ">Unlimited Support</a>
+              <a href="/" className="text-white ">Unlimited Support</a>
             </li>
           </nav>
         </div>

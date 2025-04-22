@@ -85,7 +85,7 @@ export default function EnquiryForm() {
               <h2 className="title-font font-semibold text-gray-900 text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1 text-sm">House no.1 malka park near Big water tank</p>
+              <p className="mt-1 text-sm">H No. 1 Malka Park Near Big Water Tank, Bulandshahr (U.P.) India</p>
             </div>
             <div className="lg:w-1/2 px-4 mt-2 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 text-xs">
